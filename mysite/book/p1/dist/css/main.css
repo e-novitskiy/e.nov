@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/*! Это многострочный комментарий в CSS
+* Он останется в сжатом CSS-файле, т. к. указан символ ! *
+* Версия: 1.0.0 */
+body {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+p.cls1 {
+  color: red;
+}
+
+p {
+  border-color: red;
+}
+
+div {
+  border-color: blue;
+}
+
+/*# sourceMappingURL=main.css.map */

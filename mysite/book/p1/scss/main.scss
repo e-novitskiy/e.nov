@@ -1,0 +1,43 @@
+$version: "1.0.0";
+/*! Это многострочный комментарий в CSS
+* Он останется в сжатом CSS-файле, т. к. указан символ ! *
+* Версия: #{$version} */
+
+
+$black: #000000; $white: #ffffff;
+body {
+color: $white; background-color: $black;
+}
+
+$class-name: "cls1";
+p.#{$class-name} {
+color: red; }
+
+$border: "border";
+$color: "color";
+$border-color: "#{$border}-#{$color}"; p{
+#{$border}-color: red; }
+div {
+#{$border-color}: blue;
+}
+
+
+$size: 1px;
+@if $size > 5px {
+@debug "$size больше 5px";
+}
+@else {
+@debug "$size меньше 5px"; }
+// Выведет: $size больше 5px
+
+
+
+
+$line-height: 1.5;
+@debug "$line-height: " + $line-height;
+@warn "Предупреждающее сообщение";
+
+
+
+
+
